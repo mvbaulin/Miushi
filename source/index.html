@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Miushi</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header__wrapper">
+				<div class="header__nav-bar"> 
+					<button class="header__burger-button">
+						<span class="visually-hidden">
+							Открыть / закрыть меню
+						</span>
+					</button>
+					<a class="header__logo" href="index.html">
+						<picture>
+							<source srcset="img/logo-desktop.png" media="(min-width: 1170px)">
+							<source srcset="img/logo-tablet.png" media="(min-width: 750px)">
+							<img class="header__logo-image" src="img/logo-mobile.png" alt="Miushi" width="46" height="46">
+						</picture>
+					</a>
+					<div class="header__user-box">
+						<a class="header__user-button header__user-button--user" href="#">
+							<span class="visually-hidden">
+								Перейти в личный кабинет
+							</span>
+						</a>
+						<a class="header__user-button header__user-button--cart" href="#">
+							<span class="visually-hidden">
+								Перейти в Корзину товаров
+							</span>
+						</a>
+					</div>
+				</div>
+				<div class="header__navigation-wrapper">
+					<nav class="header__site-navigation">
+						<ul class="header__navigation-list">
+							<li class="header__navigation-item header__navigation-item--dropdown">
+								<a class="header__navigation-link" href="#">
+									Меню
+								</a>
+								<ul class="header__dropdown-menu">
+									<li class="header__dropdown-item">
+										<a class="header__dropdown-link" href="#">
+											Сеты
+										</a>
+									</li>
+									<li class="header__dropdown-item">
+										<a class="header__dropdown-link" href="#">
+											Роллы
+										</a>
+									</li>
+									<li class="header__dropdown-item">
+										<a class="header__dropdown-link" href="#">
+											Пицца
+										</a>
+									</li>
+									<li class="header__dropdown-item">
+										<a class="header__dropdown-link" href="#" lang="en">
+											Wok
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li class="header__navigation-item">
+								<a class="header__navigation-link" href="#">
+									Акции и скидки
+								</a>
+							</li>
+							<li class="header__navigation-item">
+								<a class="header__navigation-link" href="#">
+									Доставка и оплата
+								</a>
+							</li>
+							<li class="header__navigation-item">
+								<a class="header__navigation-link" href="#">
+									Новости
+								</a>
+							</li>
+							<li class="header__navigation-item">
+								<a class="header__navigation-link" href="#">
+									Контакты
+								</a>
+							</li>
+							<li class="header__navigation-item header__navigation-item--desktop">
+								<a class="header__navigation-link header__navigation-link--user" href="#">
+									Кабинет
+								</a>
+							</li>
+							<li class="header__navigation-item header__navigation-item--desktop">
+								<a class="header__navigation-link header__navigation-link--cart" href="#">
+									Корзина
+									<span class="header__product-counter">
+										2
+									</span>
+								</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="header__navigation-inner">
+						<div class="header__phone-box">
+							<a class="header__phone" href="tel:+78003332222">
+								+7 (800) 333 2 222
+							</a>
+							<span class="header__phone-description">
+								Работаем с 11.00 до 23.00
+							</span>
+						</div>
+						<a class="button button--call header__button" href="#">
+							Обратный звонок
+						</a>
+						<div class="header__contacts-box">
+							<a class="header__contacts-link header__contacts-link--address" href="#">
+								г. Курск, ул. Ленина, д. 3
+							</a>
+							<a class="header__contacts-link header__contacts-link--mail" href="mailto:78003332222@yandex.ru">
+								78003332222@yandex.ru
+							</a>
+						</div>
+					</div>
+					<button class="header__close-button">
+						<span class="visually-hidden">
+							Закрыть меню
+						</span>
+					</button>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="slider">
+		<article class="slider__page">
+			<picture>
+				<source srcset="img/slider/1-desktop.jpg" media="(min-width: 1170px)">
+				<source srcset="img/slider/1-tablet.jpg" media="(min-width: 750px)">
+				<img class="slider__image" src="img/slider/1-mobile.jpg" alt="Счастливые часы">
+			</picture>
+			<div class="container">
+				<div class="slider__inner">
+					<span class="slider__page-header">
+						Счастливые часы
+					</span>
+					<span class="slider__page-description">
+						с 11:00 до 16:00 в будние дни
+					</span>
+					<a class="button slider__button" href="#">
+						Подробнее
+					</a>
+					<span class="slider__extra">
+						скидка<br>
+						15%
+					</span>
+				</div>
+			</div>
+		</article>
+		<div class="slider__dots">
+			<button class="slider__dot">
+				<span class="visually-hidden">
+					Первый слайд
+				</span>
+			</button>
+			<button class="slider__dot">
+				<span class="visually-hidden">
+					Второй слайд
+				</span>
+			</button>
+			<button class="slider__dot slider__dot--active">
+				<span class="visually-hidden">
+					Третий слайд
+				</span>
+			</button>
+		</div>
+		<div class="slider__controls">
+			<button class="slider__control-button slider__control-button--prev">
+				<span class="visually-hidden">
+					Предыдущий слайд
+				</span>
+			</button>
+			<button class="slider__control-button slider__control-button--next">
+				<span class="visually-hidden">
+					Следующий слайд
+				</span>
+			</button>
+		</div>
+	</section>
+	<script src="js/Navigation.js"></script>
+</body>
+</html>

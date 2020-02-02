@@ -1,0 +1,57 @@
+body {
+	min-width: @width-mobile;
+	color: #4d4d4d;
+	font-size: 14px;
+	line-height: 1.429;
+	font-family: 'OpenSans Regular';
+}
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+.button {
+	box-sizing: border-box;
+	display: block;
+	padding: 18px 66px;
+	font-family: 'OpenSans SemiBold';
+	font-size: inherit;
+	line-height: 1;
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	background-color: #fd4f10;
+	border-radius: 5px;
+	&--call {
+		padding: 11px 18px;
+		font-family: 'OpenSans';
+		font-size: 0.929em;
+		color: #1fba0a;
+		letter-spacing: 0.65px;
+		background-color: transparent;
+		border: 1px solid #1fba0a;
+	}
+	&--more {
+
+	}
+	&--product {
+
+	}
+}
+
+* {
+	// outline: 1px solid red;
+}
