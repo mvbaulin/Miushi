@@ -2,7 +2,12 @@
 	box-sizing: border-box;
 	margin: 0 auto;
 	padding: 0px 15px;
-	// max-width: @width-mobile;
+	&--aligned {
+		text-align: center;
+	}
+	&--no-mobile {
+		padding: 0;
+	}
 }
 @media screen and (min-width: @width-tablet) {
 	.container {

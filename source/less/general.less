@@ -34,7 +34,9 @@ img {
 	text-transform: uppercase;
 	text-align: center;
 	background-color: #fd4f10;
+	border: none;
 	border-radius: 5px;
+	cursor: pointer;
 	&--call {
 		padding: 11px 18px;
 		font-family: 'OpenSans';
@@ -45,13 +47,27 @@ img {
 		border: 1px solid #1fba0a;
 	}
 	&--more {
-
+	
 	}
 	&--product {
-
+		position: relative;
+		padding: 15px 32px;
+		width: 100%;
+		text-align: left;
+		&:after {
+			position: absolute;
+			content: "";
+			top: 50%;
+			right: 32px;
+			transform: translateY(-50%);
+			width: 22px;
+			height: 20px;
+			background-image: url(../img/icons/product-cart.png);
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+		}
 	}
 }
-
 * {
 	// outline: 1px solid red;
 }

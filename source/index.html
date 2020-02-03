@@ -133,61 +133,376 @@
 			</div>
 		</div>
 	</header>
-	<section class="slider">
-		<article class="slider__page">
-			<picture>
-				<source srcset="img/slider/1-desktop.jpg" media="(min-width: 1170px)">
-				<source srcset="img/slider/1-tablet.jpg" media="(min-width: 750px)">
-				<img class="slider__image" src="img/slider/1-mobile.jpg" alt="Счастливые часы">
-			</picture>
-			<div class="container">
-				<div class="slider__inner">
-					<span class="slider__page-header">
-						Счастливые часы
+	<main>
+		<section class="slider">
+			<article class="slider__page">
+				<picture>
+					<source srcset="img/slider/1-desktop.jpg" media="(min-width: 1170px)">
+					<source srcset="img/slider/1-tablet.jpg" media="(min-width: 750px)">
+					<img class="slider__image" src="img/slider/1-mobile.jpg"
+						alt="Счастливые часы">
+				</picture>
+				<div class="container">
+					<div class="slider__inner">
+						<span class="slider__page-header">
+							Счастливые часы
+						</span>
+						<span class="slider__page-description">
+							с 11:00 до 16:00 в будние дни
+						</span>
+						<a class="button slider__button" href="#">
+							Подробнее
+						</a>
+						<span class="slider__extra">
+							скидка<br>
+							15%
+						</span>
+					</div>
+				</div>
+			</article>
+			<div class="slider__dots">
+				<button class="slider__dot">
+					<span class="visually-hidden">
+						Первый слайд
 					</span>
-					<span class="slider__page-description">
-						с 11:00 до 16:00 в будние дни
+				</button>
+				<button class="slider__dot">
+					<span class="visually-hidden">
+						Второй слайд
 					</span>
-					<a class="button slider__button" href="#">
-						Подробнее
-					</a>
-					<span class="slider__extra">
-						скидка<br>
-						15%
+				</button>
+				<button class="slider__dot slider__dot--active">
+					<span class="visually-hidden">
+						Третий слайд
 					</span>
+				</button>
+			</div>
+			<div class="slider__controls">
+				<button class="slider__control-button slider__control-button--prev">
+					<span class="visually-hidden">
+						Предыдущий слайд
+					</span>
+				</button>
+				<button class="slider__control-button slider__control-button--next">
+					<span class="visually-hidden">
+						Следующий слайд
+					</span>
+				</button>
+			</div>
+		</section>
+		<section class="sets">
+			<div class="container container--aligned">
+				<h2 class="section-title sets__section-title">
+					Сеты
+				</h2>
+			</div>
+			<div class="sets__wrapper">
+				<div class="container container--no-mobile">
+					<section class="catalog sets__catalog">
+
+						<article class="catalog__item catalog__item--hit">
+							<picture>
+								<source srcset="img/catalog/sets/set-1-desktop.jpg"
+									media="(min-width: 1170px)">
+								<source srcset="img/catalog/sets/set-1-tablet.jpg" media="(min-width: 750px)">
+								<img class="catalog__item-image" src="img/catalog/sets/set-1-mobile.jpg"
+									alt="Сет №10" width="227" height="214">
+							</picture>
+							<div class="catalog__item-inner">
+								<h3 class="catalog__item-name">
+									Сет №10
+								</h3>
+								<div class="catalog__item-properties">
+									<span class="catalog__lot">
+										<span class="catalog__lot-count">
+											72
+										</span>
+										шт.
+									</span>
+									<span class="catalog__weight">
+										<span class="catalog__weight-count">
+											1560
+										</span>
+										г.
+									</span>
+									<span class="catalog__calory" lang="en">
+										<span class="catalog__calory-count">
+											1700
+										</span>
+										Kkal
+									</span>
+								</div>
+								<div class="catalog__item-price-box">
+									<span class="catalog__price">
+										<span class="catalog__price-count">
+											2050
+											<span class="catalog__currency">
+												руб.
+											</span>
+										</span>
+									</span>
+									<div class="catalog__item-counter">
+										<button class="catalog__count-button catalog__count-button--less">
+											<span class="visually-hidden">
+												Уменьшить колличество
+											</span>
+										</button>
+										<span class="catalog__current-count">
+											1
+										</span>
+										<button class="catalog__count-button catalog__count-button--more">
+											<span class="visually-hidden">
+												Добавить еще
+											</span>
+										</button>
+									</div>
+								</div>
+								<button class="button button--product catalog__item-button">
+									В корзину
+								</button>
+							</div>
+							<span class="catalog__indicator catalog__indicator--hit">
+								Хит
+							</span>
+						</article>
+
+						<article class="catalog__item">
+							<picture>
+								<source srcset="img/catalog/sets/set-2-desktop.jpg"
+									media="(min-width: 1170px)">
+								<source srcset="img/catalog/sets/set-2-tablet.jpg" media="(min-width: 750px)">
+								<img class="catalog__item-image" src="img/catalog/sets/set-2-mobile.jpg"
+									alt="Сет №8" width="227" height="214">
+							</picture>
+							<div class="catalog__item-inner">
+								<h3 class="catalog__item-name">
+									Сет №8
+								</h3>
+								<div class="catalog__item-properties">
+									<span class="catalog__lot">
+										<span class="catalog__lot-count">
+											24
+										</span>
+										шт.
+									</span>
+									<span class="catalog__weight">
+										<span class="catalog__weight-count">
+											960
+										</span>
+										г.
+									</span>
+									<span class="catalog__calory" lang="en">
+										<span class="catalog__calory-count">
+											800
+										</span>
+										Kkal
+									</span>
+								</div>
+								<div class="catalog__item-price-box">
+									<span class="catalog__price">
+										<span class="catalog__price-count">
+											1590
+											<span class="catalog__currency">
+												руб.
+											</span>
+										</span>
+									</span>
+									<div class="catalog__item-counter">
+										<button class="catalog__count-button catalog__count-button--less">
+											<span class="visually-hidden">
+												Уменьшить колличество
+											</span>
+										</button>
+										<span class="catalog__current-count">
+											1
+										</span>
+										<button class="catalog__count-button catalog__count-button--more">
+											<span class="visually-hidden">
+												Добавить еще
+											</span>
+										</button>
+									</div>
+								</div>
+								<button class="button button--product catalog__item-button">
+									В корзину
+								</button>
+							</div>
+						</article>
+
+						<article class="catalog__item">
+							<picture>
+								<source srcset="img/catalog/sets/set-3-desktop.jpg"
+									media="(min-width: 1170px)">
+								<source srcset="img/catalog/sets/set-3-tablet.jpg" media="(min-width: 750px)">
+								<img class="catalog__item-image" src="img/catalog/sets/set-3-mobile.jpg"
+									alt="Минисет №5" width="227" height="214">
+							</picture>
+							<div class="catalog__item-inner">
+								<h3 class="catalog__item-name">
+									Минисет №5
+								</h3>
+								<div class="catalog__item-properties">
+									<span class="catalog__lot">
+										<span class="catalog__lot-count">
+											14
+										</span>
+										шт.
+									</span>
+									<span class="catalog__weight">
+										<span class="catalog__weight-count">
+											450
+										</span>
+										г.
+									</span>
+									<span class="catalog__calory" lang="en">
+										<span class="catalog__calory-count">
+											400
+										</span>
+										Kkal
+									</span>
+								</div>
+								<div class="catalog__item-price-box">
+									<span class="catalog__price">
+										<span class="catalog__price-count">
+											510
+											<span class="catalog__currency">
+												руб.
+											</span>
+										</span>
+									</span>
+									<div class="catalog__item-counter">
+										<button class="catalog__count-button catalog__count-button--less">
+											<span class="visually-hidden">
+												Уменьшить колличество
+											</span>
+										</button>
+										<span class="catalog__current-count">
+											1
+										</span>
+										<button class="catalog__count-button catalog__count-button--more">
+											<span class="visually-hidden">
+												Добавить еще
+											</span>
+										</button>
+									</div>
+								</div>
+								<button class="button button--product catalog__item-button">
+									В корзину
+								</button>
+							</div>
+						</article>
+
+						<article class="catalog__item catalog__item--veg">
+							<picture>
+								<source srcset="img/catalog/sets/set-4-desktop.jpg"
+									media="(min-width: 1170px)">
+								<source srcset="img/catalog/sets/set-4-tablet.jpg" media="(min-width: 750px)">
+								<img class="catalog__item-image" src="img/catalog/sets/set-4-mobile.jpg"
+									alt="Сет №6" width="227" height="214">
+							</picture>
+							<div class="catalog__item-inner">
+								<h3 class="catalog__item-name">
+									Сет №6
+								</h3>
+								<div class="catalog__item-properties">
+									<span class="catalog__lot">
+										<span class="catalog__lot-count">
+											16
+										</span>
+										шт.
+									</span>
+									<span class="catalog__weight">
+										<span class="catalog__weight-count">
+											460
+										</span>
+										г.
+									</span>
+									<span class="catalog__calory" lang="en">
+										<span class="catalog__calory-count">
+											490
+										</span>
+										Kkal
+									</span>
+								</div>
+								<div class="catalog__item-price-box">
+									<span class="catalog__price">
+										<span class="catalog__price-count">
+											400
+											<span class="catalog__currency">
+												руб.
+											</span>
+										</span>
+									</span>
+									<div class="catalog__item-counter">
+										<button class="catalog__count-button catalog__count-button--less">
+											<span class="visually-hidden">
+												Уменьшить колличество
+											</span>
+										</button>
+										<span class="catalog__current-count">
+											1
+										</span>
+										<button class="catalog__count-button catalog__count-button--more">
+											<span class="visually-hidden">
+												Добавить еще
+											</span>
+										</button>
+									</div>
+								</div>
+								<button class="button button--product catalog__item-button">
+									В корзину
+								</button>
+							</div>
+							<span class="catalog__indicator catalog__indicator--veg" lang="en">
+								veg
+							</span>
+						</article>
+
+						<div class="catalog__controls">
+							<button class="catalog__control-button catalog__control-button--prev">
+								<span class="visually-hidden">
+									Листать меню назад
+								</span>
+							</button>
+							<div class="catalog__dots">
+								<button class="catalog__dot catalog__dot--active">
+									<span class="visually-hidden">
+										Первый слайд
+									</span>
+								</button>
+								<button class="catalog__dot">
+									<span class="visually-hidden">
+										Первый слайд
+									</span>
+								</button>
+								<button class="catalog__dot">
+									<span class="visually-hidden">
+										Третий слайд
+									</span>
+								</button>
+								<button class="catalog__dot">
+									<span class="visually-hidden">
+										Четвертый слайд
+									</span>
+								</button>
+								<button class="catalog__dot">
+									<span class="visually-hidden">
+										Пятый слайд
+									</span>
+								</button>
+							</div>
+							<button class="catalog__control-button catalog__control-button--next">
+								<span class="visually-hidden">
+									Листать меню вперед
+								</span>
+							</button>
+						</div>
+
+					</section>
 				</div>
 			</div>
-		</article>
-		<div class="slider__dots">
-			<button class="slider__dot">
-				<span class="visually-hidden">
-					Первый слайд
-				</span>
-			</button>
-			<button class="slider__dot">
-				<span class="visually-hidden">
-					Второй слайд
-				</span>
-			</button>
-			<button class="slider__dot slider__dot--active">
-				<span class="visually-hidden">
-					Третий слайд
-				</span>
-			</button>
-		</div>
-		<div class="slider__controls">
-			<button class="slider__control-button slider__control-button--prev">
-				<span class="visually-hidden">
-					Предыдущий слайд
-				</span>
-			</button>
-			<button class="slider__control-button slider__control-button--next">
-				<span class="visually-hidden">
-					Следующий слайд
-				</span>
-			</button>
-		</div>
-	</section>
+		</section>
+	</main>
 	<script src="js/Navigation.js"></script>
 </body>
 </html>
