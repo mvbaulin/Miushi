@@ -1,0 +1,173 @@
+.reasons {
+	padding-top: 65px;
+	padding-bottom: 45px;
+}
+.reasons__section-title {
+
+}
+.reasons__wrapper {
+
+}
+.reasons__content {
+	padding-top: 52px;
+}
+.reasons__item {
+	display: none;
+	margin-bottom: 60px;
+	&--show {
+		display: block;
+	}
+	&--handle {
+		
+	}
+	&--fresh {
+		
+	}
+	&--price {
+	
+	}
+	&--quality {
+		
+	}
+	&--fish {
+		
+	}
+	&--rise {
+	
+	}
+	&--inside {
+	
+	}
+	&--avocado {
+		
+	}
+	&--pizza {
+	
+	}
+	&--mayo {
+
+	}
+}
+.reasons__item-image {
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+.reasons__description {
+	margin: 0 auto;
+	padding: 0;
+	max-width: 185px;
+	font-family: 'OpenSans';
+	font-size: 1.143em;
+	line-height: 1.777;
+}
+.reasons__button {
+	display: none;
+}
+@media screen and (min-width: @width-tablet) {
+	.reasons {
+		padding-top: 85px;
+		padding-top: 55px;
+	}
+	.reasons__content {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+		flex-wrap: wrap;
+		padding-top: 65px;
+		padding-right: 27px;
+		padding-left: 27px;
+	}
+	.reasons__item {
+		display: block;
+		margin-bottom: 50px;
+		&:last-of-type {
+			margin: 0 auto;
+		}
+		&--handle {
+			order: 1;
+		}
+		&--fresh {
+			order: 2;
+		}
+		&--price {
+			order: 3;
+		}
+		&--quality {
+			order: 8;
+		}
+		&--fish {
+			order: 9;
+		}
+		&--rise {
+			order: 4;
+		}
+		&--inside {
+			order: 5;
+		}
+		&--avocado {
+			order: 6;
+		}
+		&--pizza {
+			order: 7;
+		}
+		&--mayo {
+			order: 10;
+		}
+	}
+	.reasons__item-image {
+		// display: flex;
+	}
+	.reasons__description {
+		// display: flex;
+		height: 84px;
+	}
+	.reasons__button {
+
+	}
+}
+@media screen and (min-width: @width-desktop) {
+	.reasons {
+		padding-top: 95px;
+		padding-bottom: 25px;
+	}
+	.reasons__content {
+
+	}
+	.reasons__item {
+		width: 20%;
+		&:last-of-type {
+			margin: 0;
+			margin-bottom: 50px;
+		}
+		&--handle {
+			order: 1;
+		}
+		&--fresh {
+			order: 2;
+		}
+		&--price {
+			order: 3;
+		}
+		&--quality {
+			order: 4;
+		}
+		&--fish {
+			order: 5;
+		}
+		&--rise {
+			order: 6;
+		}
+		&--inside {
+			order: 7;
+		}
+		&--avocado {
+			order: 8;
+		}
+		&--pizza {
+			order: 9;
+		}
+		&--mayo {
+			order: 10;
+		}
+	}
+}

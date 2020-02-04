@@ -280,6 +280,16 @@ img {
   background-color: transparent;
   border: 1px solid #1fba0a;
 }
+.button--more {
+  padding: 11px 18px;
+  padding-top: 13px;
+  font-family: 'OpenSans';
+  font-size: inherit;
+  color: #fd4f10;
+  letter-spacing: 0.7px;
+  background-color: transparent;
+  border: 1px solid #fd4f10;
+}
 .button--product {
   position: relative;
   padding: 15px 32px;
@@ -1174,6 +1184,7 @@ img {
   -webkit-box-shadow: 0 4px 29px rgba(0, 0, 0, 0.08);
           box-shadow: 0 4px 29px rgba(0, 0, 0, 0.08);
   overflow: hidden;
+  background-color: #ffffff;
 }
 .catalog__item--hit {
   position: relative;
@@ -1797,6 +1808,7 @@ img {
   }
 }
 .also {
+  position: relative;
   padding-bottom: 78px;
   overflow-x: hidden;
   background-image: url(../img/also-bg-mobile.jpg);
@@ -1874,5 +1886,179 @@ img {
   }
   .also__page-control {
     padding-bottom: 50px;
+  }
+}
+.reasons {
+  padding-top: 65px;
+  padding-bottom: 45px;
+}
+.reasons__content {
+  padding-top: 52px;
+}
+.reasons__item {
+  display: none;
+  margin-bottom: 60px;
+}
+.reasons__item--show {
+  display: block;
+}
+.reasons__item-image {
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.reasons__description {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 185px;
+  font-family: 'OpenSans';
+  font-size: 1.143em;
+  line-height: 1.777;
+}
+.reasons__button {
+  display: none;
+}
+@media screen and (min-width: 750px) {
+  .reasons {
+    padding-top: 85px;
+    padding-top: 55px;
+  }
+  .reasons__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-top: 65px;
+    padding-right: 27px;
+    padding-left: 27px;
+  }
+  .reasons__item {
+    display: block;
+    margin-bottom: 50px;
+  }
+  .reasons__item:last-of-type {
+    margin: 0 auto;
+  }
+  .reasons__item--handle {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .reasons__item--fresh {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .reasons__item--price {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .reasons__item--quality {
+    -webkit-box-ordinal-group: 9;
+        -ms-flex-order: 8;
+            order: 8;
+  }
+  .reasons__item--fish {
+    -webkit-box-ordinal-group: 10;
+        -ms-flex-order: 9;
+            order: 9;
+  }
+  .reasons__item--rise {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  .reasons__item--inside {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
+  }
+  .reasons__item--avocado {
+    -webkit-box-ordinal-group: 7;
+        -ms-flex-order: 6;
+            order: 6;
+  }
+  .reasons__item--pizza {
+    -webkit-box-ordinal-group: 8;
+        -ms-flex-order: 7;
+            order: 7;
+  }
+  .reasons__item--mayo {
+    -webkit-box-ordinal-group: 11;
+        -ms-flex-order: 10;
+            order: 10;
+  }
+  .reasons__description {
+    height: 84px;
+  }
+}
+@media screen and (min-width: 1170px) {
+  .reasons {
+    padding-top: 95px;
+    padding-bottom: 25px;
+  }
+  .reasons__item {
+    width: 20%;
+  }
+  .reasons__item:last-of-type {
+    margin: 0;
+    margin-bottom: 50px;
+  }
+  .reasons__item--handle {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .reasons__item--fresh {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .reasons__item--price {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .reasons__item--quality {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  .reasons__item--fish {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
+  }
+  .reasons__item--rise {
+    -webkit-box-ordinal-group: 7;
+        -ms-flex-order: 6;
+            order: 6;
+  }
+  .reasons__item--inside {
+    -webkit-box-ordinal-group: 8;
+        -ms-flex-order: 7;
+            order: 7;
+  }
+  .reasons__item--avocado {
+    -webkit-box-ordinal-group: 9;
+        -ms-flex-order: 8;
+            order: 8;
+  }
+  .reasons__item--pizza {
+    -webkit-box-ordinal-group: 10;
+        -ms-flex-order: 9;
+            order: 9;
+  }
+  .reasons__item--mayo {
+    -webkit-box-ordinal-group: 11;
+        -ms-flex-order: 10;
+            order: 10;
   }
 }
