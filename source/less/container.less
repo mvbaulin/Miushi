@@ -8,11 +8,18 @@
 	&--no-mobile {
 		padding: 0;
 	}
+	&--no-mobile-devices {
+		padding: 0;
+	}
 }
 @media screen and (min-width: @width-tablet) {
 	.container {
 		padding: 0 23px;
 		max-width: @width-tablet;
+		&--no-mobile-devices {
+			padding: 0;
+			max-width: 100%;
+		}
 	}
 }
 @media screen and (min-width: @width-desktop) {
